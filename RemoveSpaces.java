@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class CountCharacters {
-    static void countCharacters(String s) {
-        int count = 0;
+public class RemoveSpaces {
+    static void removeSpaces(String s) {
+        String result = "";
         for (char c : s.toCharArray()) {
             if (c != ' ')
-                count++;
+                result += c;
         }
-        System.out.println(count);
+        System.out.println(result);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
-        countCharacters(input);
+        removeSpaces(input);
     }
 }
